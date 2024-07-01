@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         listening = true;
         startListen.disabled = true;
         try {
-            const response = await fetch('http://127.0.0.1:5000/listen', {
+            const response = await fetch('http://your-ip-address/listen', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const text = inputText.value;
         const destLanguage = destLang.value;
         try {
-            const response = await fetch('http://127.0.0.1:5000/translate', {
+            const response = await fetch('http://your-ip-address/translate', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
